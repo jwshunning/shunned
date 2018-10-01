@@ -214,11 +214,12 @@ a[href^="http"]:hover {
   display: none;
   position: absolute;
   font-family: 'Spectral SC', serif;
-  font-size: 1.5em;
-  color: #f7efe1;
+  font-weight: 500;
+  font-size: 2em;
+  color: #f7f6f4;
   margin: 10px;
-  top: 190px;
-  left: 30%;
+  top: 40%;
+  left: 26%;
 }
 
 .name.active {
@@ -274,22 +275,22 @@ h1 {
     /* margin-bottom: 30px; */
   }
   .headline {
-    font-size: 3.7em;
+    font-size: 5.2em;
     text-align: center;
     padding: 10px;
     font-family: 'Spectral SC', serif;
     margin-bottom: 0px;
     position: absolute;
-    top: 46%;
-    left: 23%;
+    top: 37%;
+    left: 13%;
     color: #fff;
   }
   .section h2 {
-    top: 66%;
-    left: 18%;
+    top: 64%;
+    left: 16%;
     position: absolute;
     color: #fff;
-    font-size: 1.7em;
+    font-size: 1.9em;
     font-family: 'Spectral SC', serif;
     margin-top: 0;
     padding: 0;
