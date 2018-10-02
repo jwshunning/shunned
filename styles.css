@@ -114,6 +114,38 @@ body {
   max-width: 790px;
 }
 
+.about-page {
+  display: table-cell;
+  vertical-align: middle;
+  /* margin-top: 80px; */
+}
+
+.authorpic {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#joy {
+  margin-top: 50px;
+}
+
+.about-page img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+/* .author {
+  display: inline-block;
+  align-items: baseline;
+  width: 70%;
+  margin-bottom: 50px;
+} */
+
+.author strong {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
 .menu a {
   display: none;
 }
@@ -513,6 +545,26 @@ iframe {
     margin: 0 auto;
     max-width: 760px;
     margin-top: 50px;
+  }
+  .about-page img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 790px;
+    margin: 0 auto;
+    /* margin-top: 80px; */
+  }
+  .author {
+    display: inline-block;
+    align-items: baseline;
+    text-align: left;
+    width: 70%;
   }
 }
 
