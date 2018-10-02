@@ -18,6 +18,11 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
   font-size: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 body {
@@ -42,6 +47,7 @@ body {
   text-align: center;
   padding: 10px;
   font-family: 'Spectral SC', serif;
+  font-weight: 500;
   margin-bottom: 0px;
   position: absolute;
   top: 7%;
@@ -54,6 +60,7 @@ body {
   top: 27%;
   position: absolute;
   font-family: 'Spectral SC', serif;
+  font-weight: 500;
   padding: 10px;
   line-height: 1.3em;
 }
@@ -107,7 +114,42 @@ body {
   max-width: 790px;
 }
 
-.menu {
+.menu a {
+  display: none;
+}
+
+.menu a.icon {
+  float: right;
+  display: block;
+  color: #000;
+  font-size: 2.2em;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.menu.responsive {
+  position: relative;
+  margin-top: -4px;
+}
+
+.menu.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu.responsive a {
+  float: none;
+  display: block;
+  text-align: center;
+  color: #f7efe1;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+/* .menu {
   background-color: #000;
   padding: 20px;
   display: flex;
@@ -127,7 +169,7 @@ body {
 
 .menu a:hover {
   color: #5D4419;
-}
+} */
 
 p {
   margin-bottom: 30px;
@@ -320,8 +362,14 @@ iframe {
 
 /* Tablet/Desktop overrides */
 
-@media(min-width: 681px) {
+@media(max-width: 320px) {
   /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+  .headline {
+    top: 3%;
+  }
+  .section h2 {
+    top: 47%;
+  }
 }
 
 @media(min-width: 729px) {
@@ -337,33 +385,100 @@ iframe {
     /* margin-bottom: 30px; */
   }
   .headline {
-    font-size: 5.2em;
+    font-size: 3.2em;
     text-align: center;
     padding: 10px;
     font-family: 'Spectral SC', serif;
     margin-bottom: 0px;
     position: absolute;
-    top: 37%;
-    left: 13%;
+    top: 40%;
+    left: 5%;
     color: #fff;
   }
   .section h2 {
-    top: 64%;
-    left: 16%;
+    top: 65%;
+    left: 5%;
     position: absolute;
     color: #fff;
-    font-size: 1.9em;
+    font-size: 1.3em;
     font-family: 'Spectral SC', serif;
     margin-top: 0;
     padding: 0;
   }
+  /* Add a black background color to the top navigation */
+  .menu {
+    background-color: #000;
+    /* padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -4px; */
+    overflow: hidden;
+    margin: -4px;
+    display: flex;
+    justify-content: center;
+  }
+  /* Style the links inside the navigation bar */
   .menu a {
+    float: left;
     margin: 25px;
     text-decoration: none;
     font-size: 1.2em;
     color: #f7efe1;
     font-family: 'Merriweather', serif;
+    display: block;
+    text-align: center;
+    /* padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; */
   }
+  /* Change the color of links on hover */
+  .menu a:hover {
+    color: #5D4419;
+    /* background-color: #ddd;
+    color: black; */
+  }
+  /* Add an active class to highlight the current page */
+  /* .active {
+    background-color: #333;
+    color: white;
+  } */
+  /* .topnav a:not(:first-child) {
+    display: block;
+  } */
+  /* Hide the link that should open and close the topnav on small screens */
+  .menu a.icon {
+    display: none;
+  }
+  /* .menu {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -4px;
+  }
+
+  .menu a {
+    margin: 7px;
+    text-decoration: none;
+    font-size: .8em;
+    color: #f7efe1;
+    font-family: 'Merriweather', serif;
+  }
+
+  .menu a:hover {
+    color: #5D4419;
+  } */
+  /* .menu a {
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #f7efe1;
+    font-family: 'Merriweather', serif;
+  } */
   .section #subhead {
     top: 70%;
     left: 35%;
@@ -400,3 +515,32 @@ iframe {
     margin-top: 50px;
   }
 }
+
+@media(min-width: 1024px) {
+  /* Any adjustments for Desktop and larger go here. Note these styles will be applied to anything 1024 or larger -- so esktop */
+  .headline {
+    font-size: 4.7em;
+    top: 36%;
+    left: 2%;
+  }
+  .section h2 {
+    top: 62%;
+    left: 3%;
+    font-size: 1.8em;
+  }
+  p.beginning {
+    margin-top: 80px;
+  }
+  @media(min-width: 1280px) {
+    /* Any adjustments for Desktop and larger go here. Note these styles will be applied to anything 1024 or larger -- so esktop */
+    .headline {
+      font-size: 5.2em;
+      top: 36%;
+      left: 13%;
+    }
+    .section h2 {
+      top: 69%;
+      left: 16%;
+      font-size: 1.9em;
+    }
+  }
