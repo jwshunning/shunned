@@ -7,14 +7,14 @@
 
 $(document).ready(function () {
 
-	$(".photo").mouseover(function () {
-		var thisname = $(this);
-		thisname.find('.name').show();
-	});
-	$(".photo").mouseout(function () {
-		var thisname = $(this);
-		thisname.find('.name').hide();
-	});
+	// $(".photo").mouseover(function () {
+	// 	var thisname = $(this);
+	// 	thisname.find('.name').show();
+	// });
+	// $(".photo").mouseout(function () {
+	// 	var thisname = $(this);
+	// 	thisname.find('.name').hide();
+	// });
 
 	var pauseAudio = function (container) {
 		var player = container.find("audio")[0];
