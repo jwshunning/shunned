@@ -76,7 +76,7 @@ body {
   width: 370px;
   height: 370px;
   /* float: left; */
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .photo img:hover {
@@ -98,6 +98,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .story-container {
@@ -215,6 +216,9 @@ a[href^="http"]:hover {
 .photo {
   position: relative;
   text-align: center;
+  margin: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .name {
@@ -222,8 +226,8 @@ a[href^="http"]:hover {
   /* width: 370px;
   height: 370px; */
   position: absolute;
-  margin: 10px;
-  top: 85%;
+  /* margin: 10px; */
+  top: 90%;
   left: 0;
   font-family: 'Spectral SC', serif;
   font-weight: 600;
@@ -233,14 +237,14 @@ a[href^="http"]:hover {
   background-color: #fff;
 }
 
-/*
-.photo a {
-  display: table;
-} */
-
-a:hover {
-  opacity: 0.7;
+.photo:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
+
+/* a:hover {
+  opacity: 0.7;
+} */
 
 a:hover .name {
   display: inline-block;
@@ -261,9 +265,9 @@ h1 {
   font-family: 'Spectral SC', serif;
   padding: 10px;
   font-weight: 700;
-  border-left: solid 7px #5D4419;
+  border-left: solid 7px #2d2211;
   clear: both;
-  color: #5D4419;
+  color: #2d2211;
   margin-top: 40px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -285,6 +289,33 @@ h1 {
   margin-left: 15px;
   width: 60px;
   cursor: pointer;
+}
+
+.end {
+  margin-bottom: 70px;
+}
+
+a.prev {
+  float: left;
+  opacity: 1;
+  font-size: 1.1em;
+  color: #991515;
+}
+
+a.next {
+  float: right;
+  opacity: 1;
+  font-size: 1.1em;
+  color: #991515;
+}
+
+a.next:hover, a.prev:hover {
+  opacity: 1;
+  color: #ef4343;
+}
+
+iframe {
+  width: 100%;
 }
 
 /* Tablet/Desktop overrides */
@@ -361,5 +392,11 @@ h1 {
   }
   .name {
     display: none;
+  }
+  .quiz-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 760px;
+    margin-top: 50px;
   }
 }
