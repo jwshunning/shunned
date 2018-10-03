@@ -1,9 +1,3 @@
-// $(document).ready(function () {
-// 	$(".photo").on("hover", function () {
-// 		$(".name").find('p').show();
-// 	});
-//
-// });
 function myFunction() {
 	var x = document.getElementById("myMenu");
 	if (x.className === "menu") {
