@@ -59,6 +59,8 @@ body {
   margin-bottom: 0px;
   position: absolute;
   top: 3%;
+  left: 0;
+  right: 0;
   color: #fff;
   line-height: 1.3em;
 }
@@ -66,6 +68,8 @@ body {
 .section h2 {
   color: #fff;
   top: 27%;
+  left: 0;
+  right: 0;
   position: absolute;
   font-family: 'Spectral SC', serif;
   font-weight: 500;
@@ -433,12 +437,14 @@ iframe {
     margin-bottom: 0px;
     position: absolute;
     top: 40%;
-    left: 5%;
+    left: 0;
+    right: 0;
     color: #fff;
   }
   .section h2 {
     top: 65%;
-    left: 5%;
+    left: 0;
+    right: 0;
     position: absolute;
     color: #fff;
     font-size: 1.3em;
@@ -582,11 +588,13 @@ iframe {
   .headline {
     font-size: 4.7em;
     top: 36%;
-    left: 2%;
+    left: 0;
+    right: 0;
   }
   .section h2 {
     top: 62%;
-    left: 3%;
+    left: 0;
+    right: 0;
     font-size: 1.8em;
   }
   p.beginning {
@@ -597,11 +605,13 @@ iframe {
     .headline {
       font-size: 5.2em;
       top: 36%;
-      left: 13%;
+      left: 0;
+      right: 0;
     }
     .section h2 {
       top: 69%;
-      left: 16%;
+      left: 0;
+      right: 0;
       font-size: 1.9em;
     }
   }
