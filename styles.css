@@ -415,7 +415,7 @@ iframe {
   align-items: center;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -425,16 +425,17 @@ iframe {
 .a2a_kit h3 {
   margin: 0;
   padding: 0;
-  color: #fff;
   font-family: 'Helvetica';
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .bar-title {
   left: 0;
   right: 0;
 }
+
+.bar-item {}
 
 /* Tablet/Desktop overrides */
 
